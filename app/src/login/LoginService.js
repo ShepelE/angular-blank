@@ -10,6 +10,7 @@
             this.login = function (user) {
                 localStorageService.set('user', user);
                 $http.defaults.headers.common["Authorization"] = user.password;
+                return Promise.resolve(user);
             };
 
             this.getUser = function () {

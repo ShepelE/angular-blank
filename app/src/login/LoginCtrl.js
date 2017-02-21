@@ -59,26 +59,7 @@
             //if success - choose state to go to
             function _onSuccessLogin (email, state) {
                 console.log('Success authorization with login:|'+$scope.user.email+'| and password:|'+$scope.user.password+'|');
-                if(state.params){
-                    if (window.cordova) {
-                        StripeService.getCustomers()
-                            .then(function (customers) {
-                                var customer = _.find(customers.data, {email: email});
-                                if (!customer) StripeService.customersCreate(email)
-                                    .then(function () {
-                                        $state.go(state.state, state.params);
-                                    });
-                                else {
-                                    $state.go(state.state, state.params);
-                                }
-                            });
-                    }
-                    else{
-                        $state.go(state.state, state.params);
-                    }
-                } else {
-                    $state.go(state.state);
-                }
+                $state.go('inAppPurchases');
             }
             //else - write an error
             function _onRejectLogin (errorObj) {
@@ -95,13 +76,5 @@
                     }
                 }
             }
-
-            $scope.facebookLogin = function () {
-                LoginService.facebookLogin().then(_onSuccessLogin.bind(this, $scope.user.email), _onRejectLogin);
-            };
-
-            $scope.googlePlusLogin = function () {
-                LoginService.googlePlusLogin().then(_onSuccessLogin.bind(this, $scope.user.email), _onRejectLogin);
-            };
         });
 })();

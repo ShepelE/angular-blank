@@ -173,4 +173,4 @@ gulp.task('clean', function () {
 
 // Default Task
 gulp.task('default', ['connect', 'scripts_loc', 'html', 'copy_index', 'copy-config-xml', 'css', 'images', 'BOWER', 'copy-assets', 'watch']);
-gulp.task('production', ['scripts_loc', 'html', 'copy_index', 'copy-config-xml', 'css', 'images', 'BOWER_MIN', 'copy-assets', 'watch']);
+gulp.task('production', ['scripts_loc', 'html', 'copy_index', 'copy-config-xml', 'css', 'images', 'BOWER_MIN', 'copy-assets']);
