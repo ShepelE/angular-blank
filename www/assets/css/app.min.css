@@ -1,0 +1,470 @@
+@font-face {
+    font-family: 'BariolRegular';
+    src: url('../fonts/Bariol.ttf')  format('truetype');
+}
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td,
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input[type=search], input[type=text], input[type=password],
+input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time],
+input[type=week], input[type=number], input[type=email], input[type=url], input[type=tel], input[type=color], textarea,
+select, button, .input-label, .bar .button{
+    font-family: 'BariolRegular';
+    text-decoration: none;
+    color:#969696;
+}
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td,
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input[type=search], input[type=text], input[type=password],
+input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time],
+input[type=week], input[type=number], input[type=email], input[type=url], input[type=tel], input[type=color], textarea,
+select, button, .input-label, .bar .button{
+    font-size:15px;
+}
+iframe {
+    height: 100%;
+    width: 100%;
+}
+h3, h3.title, .bar h3.title{
+    font-size: 24px;
+}
+.scroll h3.title,
+.scroll h2.title{
+    font-weight: bold;
+}
+.col {
+    overflow: hidden;
+    white-space: normal;
+}
+.bar-subheader {
+    padding:0;
+}
+.item .row{
+    padding:0;
+}
+.item .row .col{
+    padding:0;
+}
+.bar.bar-footer .tabs-top > .tabs,
+.bar.bar-footer .tabs.tabs-top{
+    top:0;
+}
+.view-container .pane .has-footer{
+    bottom:49px;
+}
+.pt-for-table{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    position: absolute;
+    top: 0;
+    height:100%;
+    width:100%;
+}
+.pt-one-line{
+    height:15px;
+}
+.pt-table {
+    display: table;
+    height:100%;
+    width:100%;
+}
+.pt-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.item.item-input,
+.item.item-input:last-child{
+    height: 35px;
+    margin:10px 0;
+    border-radius: 17px;
+    overflow: hidden;
+}
+.bar.bar-footer {
+    padding: 0;
+    height: 49px;
+}
+.bar-footer .button {
+    width:100%;
+}
+.balanced .input-label,
+.balanced input[type=text],
+.balanced input[type=password]{
+    color:white;
+    font-weight: bold;
+}
+.input-label {
+    font-weight: bold;
+    color: #18a21b;
+    padding-bottom: 0;
+    width: 100%;
+}
+.scroll-content .scroll .row .col .list .item-input{
+    border-radius: 0;
+}
+.scroll-content .scroll .row .col .list .new-style-input{
+    background-color: transparent;
+    margin-top: 0;
+}
+.scroll-content .scroll .row .col .list .new-style-input input{
+    color: #18a21b;
+    padding-right: 17px;
+}
+.bar .title.h3{
+    font-size: 20px;
+}
+
+.bar .title.h1{
+  font-size: 20px;
+}
+
+.scroll-content .scroll .bar .title{
+  font-size: 20px;
+}
+input:disabled{
+    opacity:1;
+}
+/*border-color: #ddd;*/
+
+.pt-unboarding-item{
+    background-color: #fff;
+    border: 1px solid #18a21b;
+    min-height:30px;
+    display:inline-block;
+    padding:5px 10px;
+    margin:10px 0 0 10px;
+    border-radius: 15px;
+}
+.pt-unboarding-item.blocked{
+    border: 1px solid #ccc;
+}
+.page-onboarding .list-wrapper{
+     padding-right:10px;
+ }
+.page-onboarding .content .title{
+    padding-top: 10px;
+    color: #4f4f4f;
+}
+.button h3{
+    margin-bottom: 0;
+}
+.bar-footer .button{
+    border-radius: 0;
+}
+
+.page-welcome .text-center.button.button-energized i:before{
+  font-size: 25px;
+  margin-top: -2px;
+}
+
+.big-icon{
+    font-size: 30px;
+}
+.content.step-template .has-footer .scroll{
+    padding-bottom:10px;
+}
+.hidden{
+    display:none;
+}
+
+.pt-color-white,
+.button-energized h3:first-child,
+.pt-unboarding-item span.pt-color-white,
+input[type=number].pt-color-white{
+    color:#fff;
+}
+.pt-color-white::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #fff;
+    font-weight: 100;
+    font-style: italic;
+}
+.pt-color-white:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+    color: #fff;
+    font-weight: 100;
+    font-style: italic;
+}
+.placeholder-icon{
+    color: #fff;
+}
+.pt-form{
+    padding:0;
+}
+.pt-input-wrapper{
+    width:100%;
+    margin:5px 0 0 0;
+    height: 50px;
+    border-top: 0;
+    border-radius: 0;
+    padding:0 10px;
+    background-color: white;
+}
+.pt-inline-label{
+    margin:14px 0 0 0;
+    width:70%;
+    float:left;
+}
+input.pt-inline-input{
+    width:16%;
+    margin:10px 0 0 0;
+    overflow:hidden;
+    border:0;
+    border-radius: 15px;
+    float:right;
+    padding: 0 0 0 10px;
+    height: 30px;
+    background-color: #18a21b;
+    color:#fff;
+    border-color: #18a21b;
+    text-align: center;
+}
+
+.item.item-input.errortyping{
+    box-shadow: 0 0 10px rgba(255,0,0,1);
+}
+.pt-error-message{
+    color:#f88;
+    font-style: italic;
+}
+.content .tab-nav.tabs{
+    padding-top: 0;
+}
+.content .tab-item{
+    padding-top: 8px;
+}
+
+.bar.bar-balanced,
+.button.button-balanced,
+.button.button-balanced.activated,
+.content .tabs-balanced>.tabs,
+.content .tabs.tabs-balanced,
+.item-stacked-label input.balanced,
+.balanced{
+    background-color: #18a21b;
+    color:#fff;
+    border-color: #18a21b;
+}
+input[disabled] {
+    background-color: #ddd;
+}
+.active,
+.tab-item.tab-item-active{
+    background-color: #1bba1f;
+    border-color: #1bba1f;
+}
+.tab-item.tab-item-active.blocked,
+.item.item-input.balanced.disabled{
+    background-color: #ddd;
+    border-color: #ddd;
+}
+.bar.bar-energized,
+.button.button-energized,
+.button.button-energized.activated,
+.energized {
+    background-color: #fa5420;
+    color:#fff;
+    border-color: #fa5420;
+}
+.dark-orange{
+    background-color: #da3300;
+}
+.white{
+    background-color: #fff;
+}
+.grey{
+    background-color: #f2f2f2;
+}
+.dark-grey{
+    background-color: #ccc;
+}
+.pt-color-balanced,
+.pt-unboarding-item span,
+input[type=number].pt-color-balanced,
+.bar .pt-color-balanced{
+    color:#18a21b;
+}
+.pt-unboarding-item.blocked span{
+    color:#ddd;
+}
+.pt-color-energized, .bar .pt-color-energized{
+    color:#fa5420;
+}
+label.item.item-input.balanced input[type=email],
+label.item.item-input.balanced input[type=text],
+label.item.item-input.balanced.disabled input[type=text],
+label.item.item-input.balanced.disabled span,
+.pt-color-white{
+    color:#fff;
+}
+.pt-color-grey{
+    color:#ddd;
+}
+
+select{
+    width:100%;
+}
+.item-select{
+    height:30px;
+    background-color: #18a21b;
+}
+.item-select:after{
+    color:white;
+}
+.item-select select{
+    right: auto;
+    padding: 5px 0px 5px 0px;
+    direction: ltr;
+    font-size: 17px;
+    background-color: #18a21b;
+    max-width:100%;
+    color:white;
+}
+.select-wrapper{
+    position: relative;
+    padding: 0 10px;
+}
+.pt-unbordered {
+    border:0;
+}
+
+.recipe-bar{
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9) 20% , rgba(0,0,0,0.3) 80%, rgba(0,0,0,0) 100%);
+    height:70px;
+    position: absolute;
+    bottom: 0;
+    width:100%;
+}
+.pt-bold{
+    font-weight: bold;
+}
+input[type=number].pt-inner-input{
+    height: 16px;
+}
+.item.item-input.item-stacked-label,
+.item.item-input.item-stacked-label:last-child{
+    height: auto;
+    border-radius: 0;
+    padding-right: 11px;
+    border: none;
+}
+.item.item-input.item-stacked-label input{
+    border-radius: 17px;
+    padding-left: 10px;
+}
+.backdrop.visible{
+    visibility: hidden;
+}
+.bar .button.button-icon.icon-right.middle-icon:before{
+    font-size: 18px;
+}
+.bar .button.button-icon.icon-left:before{
+  font-size: 23px;
+}
+.bar .button.button-icon.icon::before,
+.bar .button.button-icon.icon-left::before{
+  font-size: 14px;
+}
+.bar .button.button-icon span{
+    font-size: 15px;
+}
+.pt-header-size{
+    height: 44px;
+    width:100%;
+    border:0;
+}
+.pt-right{
+    display:block;
+    height: 100%;
+    float:right;
+    width: auto;
+}
+.pt-left{
+    display:block;
+    height: 100%;
+    float:left;
+    width: auto;
+}
+.pt-right-arrow{
+    width:0;
+    height: 0;
+    border: 0;
+    border-left: 44px solid #fff;
+    border-top: 22px solid #18a21b;
+    border-bottom: 22px solid #18a21b;
+}
+.pt-left-arrow{
+    width:0;
+    height: 0;
+    border: 0;
+    border-right: 44px solid #fff;
+    border-top: 22px solid #18a21b;
+    border-bottom: 22px solid #18a21b;
+}
+.pt-header-size .title{
+    display: inline;
+}
+
+/*fix input label jump bug*/
+.item-input input {
+    padding-right: 44px;
+}
+
+.local-loader{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 6;
+}
+.local-loader .loading{
+    width: 40px;
+    height: 40px;
+}
+.button-right{
+    position: absolute;
+    right: 38px;
+}
+.popup-container.popup-showing.active{
+    background-color: rgba(0,0,0,0.2);
+}
+.loading-container.active.visible {
+    opacity: 0.8;
+    background-color: #fff;
+}
+.loading-container.active.visible .loading{
+    background-color: rgba(255, 255, 255, 1);
+}
+.loading-container.active.visible .loading span{
+    color: #000;
+}
+
+.loading-container .loading{
+    background-color: rgba(255, 255, 255, 0);
+    color: #000;
+}
+.loading-container .loading span{
+    color: rgba(255, 255, 255, 0);
+}
+.page-inAppPurchases .item {
+  padding-top:10px;
+  padding-bottom:10px;
+  border-bottom: 0;
+}
+.page-inAppPurchases .item span {
+  position: relative;
+  bottom:6px;
+}
+.page-inAppPurchases .item .radio.ion-ios-checkmark,
+.page-inAppPurchases .item .radio.ion-ios-circle-outline {
+  font-size: 30px;
+}
+.page-inAppPurchases .list>span {
+  margin: -4px 10px 0 15px;
+  display: block;
+}
+.page-inAppPurchases .list:last-child {
+  border-bottom: 1px solid #ddd;
+}

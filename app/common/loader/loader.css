@@ -1,0 +1,18 @@
+.loading-container.active.visible {
+    opacity: 0.8;
+    background-color: #fff;
+}
+.loading-container.active.visible .loading{
+    background-color: rgba(255, 255, 255, 1);
+}
+.loading-container.active.visible .loading span{
+    color: #000;
+}
+
+.loading-container .loading{
+    background-color: rgba(255, 255, 255, 0);
+    color: #000;
+}
+.loading-container .loading span{
+    color: rgba(255, 255, 255, 0);
+}

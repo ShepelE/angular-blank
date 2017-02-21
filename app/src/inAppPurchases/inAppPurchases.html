@@ -1,0 +1,33 @@
+<ion-view padding="false"
+          class="content page-inAppPurchases"
+          can-swipe-back="false">
+
+    <div class="bar bar-header">
+        <a href="#/main/settings">
+            <button class="button button-icon icon ion-chevron-left pt-color-energized"
+                    ng-click="goBack();">
+            </button>
+        </a>
+        <div class="h1 title pt-color-energized">
+            Setup Subscription
+        </div>
+    </div>
+
+    <ion-content class="content has-header has-footer"
+                padding="false"
+                scroll="true"
+                has-bouncing="false">
+        <ion-list class="list"
+                show-delete="false"
+                can-swipe="false">
+
+        </ion-list>
+    </ion-content>
+
+    <div class="bar bar-footer bar-energized">
+        <button class="button button-energized" ng-click="submit();">
+            <h3 class="title">Submit</h3>
+        </button>
+    </div>
+
+</ion-view>

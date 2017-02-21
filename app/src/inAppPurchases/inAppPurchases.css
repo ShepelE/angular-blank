@@ -1,0 +1,20 @@
+.page-inAppPurchases .item {
+  padding-top:10px;
+  padding-bottom:10px;
+  border-bottom: 0;
+}
+.page-inAppPurchases .item span {
+  position: relative;
+  bottom:6px;
+}
+.page-inAppPurchases .item .radio.ion-ios-checkmark,
+.page-inAppPurchases .item .radio.ion-ios-circle-outline {
+  font-size: 30px;
+}
+.page-inAppPurchases .list>span {
+  margin: -4px 10px 0 15px;
+  display: block;
+}
+.page-inAppPurchases .list:last-child {
+  border-bottom: 1px solid #ddd;
+}

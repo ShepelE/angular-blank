@@ -1,0 +1,38 @@
+{
+  "name": "purchase-service",
+  "version": "0.0.0",
+  "private": "true",
+  "authors": [
+    "Evgen Shepel <atosmain@gmail.com>"
+  ],
+  "description": "app",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "iap",
+    "mobile"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "ionic": "1.0.0",
+    "angular": "1.5.7",
+    "angular-resource": "1.5.7",
+    "moment": "#2.10.6",
+    "ngCordova": "~0.1.12-alpha",
+    "jquery": "~2.1.4",
+    "LocalStorageAdapter": "*",
+    "lodash": "~4.11.2",
+    "angular-messages": "^1.6.2",
+    "angular-local-storage": "^0.5.2"
+  },
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.1.1"
+  }
+}

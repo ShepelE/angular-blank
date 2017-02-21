@@ -1,0 +1,34 @@
+<html ng-app="iap">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <meta content="default-src https://codepush.azurewebsites.net 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta http-equiv="x-rim-auto-match" content="none" />
+        <title>In-app purchase service</title>
+        <link href="assets/css/bower-components.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <ion-nav-view animation="slide-left-right-ios7" has-bouncing="false"></ion-nav-view>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="assets/js/bower-components.min.js"></script>
+        <script type="text/javascript" src="assets/js/templates.js"></script>
+        <script type="text/javascript" src="assets/js/app.min.js"></script>
+        <script>
+            document.addEventListener("deviceready", function () {
+                if (localStorage.getItem("opened")) {
+                    setTimeout(function () {
+                        navigator.splashscreen.hide();
+                    }, 3000);
+                } else {
+                    setTimeout(function () {
+                        navigator.splashscreen.hide();
+                        localStorage.setItem("opened", true);
+                    }, 4000);
+                }
+            }, false);
+        </script>
+    </body>
+</html>

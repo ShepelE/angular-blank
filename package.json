@@ -1,0 +1,21 @@
+{
+  "name": "purchase-service",
+  "version": "0.0.0",
+  "description": "purchase app",
+  "main": "index.js",
+  "author": "Evgen Shepel <atosmain@gmail.com>",
+  "private": true,
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-angular-templatecache": "^2.0.0",
+    "gulp-cache": "^0.4.5",
+    "gulp-clean": "^0.3.2",
+    "gulp-connect": "^5.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-rename": "^1.2.2"
+  }
+}

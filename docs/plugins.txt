@@ -1,0 +1,6 @@
+ordova plugin add cordova-plugin-statusbar
+cordova plugin add ionic-plugin-keyboard
+cordova plugin add cordova-plugin-device
+cordova plugin add cordova-plugin-splashscreen
+cordova plugin add cordova-plugin-network-information
+cordova plugin add cordova-plugin-code-push@latest

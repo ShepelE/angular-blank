@@ -1,0 +1,71 @@
+<ion-view title="Login"
+          can-swipe-back="false"
+          class="login-page">
+    <ion-content overflow-scroll="true"
+                 padding="false"
+                 class="pt-for-table"
+                 scroll="true"
+                 has-bouncing="false">
+        <div class="pt-table">
+            <div class="row pt-cell">
+                <div class="col col-80 col-offset-10">
+                    <form name="forms.loginForm"
+                          id="forms.loginForm"
+                          class="list"
+                          ng-submit="login(forms.loginForm);"
+                          novalidate>
+
+                        <!--email-->
+                        <span class="input-label">Username</span>
+                        <label class="item item-input balanced new-style-input"
+                               ng-class="{'errortyping':forms.loginForm.$submitted
+                                    && forms.loginForm.email.$error.required}">
+                            <input type="text"
+                                   name="email"
+                                   ng-model="user.email"
+                                   required/>
+                        </label>
+                        <div ng-if="forms.loginForm.$submitted
+                                && forms.loginForm.email.$error.required"
+                             class="pt-error-message text-center">
+                            Username or email is required.
+                        </div>
+
+                        <!--password-->
+                        <span class="input-label">Password</span>
+                        <label class="item item-input balanced new-style-input"
+                               ng-class="{'errortyping':forms.loginForm.$submitted
+                                    && (forms.loginForm.password.$error.required
+                                        || forms.loginForm.password.$error.minlength)}">
+                            <input type="password"
+                                   name="password"
+                                   ng-model="user.password"
+                                   required
+                                   minlength="3"/>
+                        </label>
+                        <div ng-if="forms.loginForm.$submitted
+                                && forms.loginForm.password.$error.required"
+                             class="pt-error-message text-center">
+                            Password is required.
+                        </div>
+                        <div ng-if="forms.loginForm.$submitted
+                                && !forms.loginForm.password.$error.required
+                                && forms.loginForm.password.$error.minlength"
+                             class="pt-error-message text-center">
+                            minimum 3 characters
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+    <div class="bar bar-footer bar-energized">
+        <button class="button button-energized"
+                type="submit"
+                form="forms.loginForm">
+            <h3 class="title">
+                Sign In
+            </h3>
+        </button>
+    </div>
+</ion-view>
